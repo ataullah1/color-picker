@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker Web Aplication</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-box">
+        <div class="display-color">
+          <div class="display-color-text">
+            <h2>Display Color</h2>
+            <p class="random_click">Random Color</p>
+          </div>
+          <div class="color"></div>
+        </div>
+
+        <div class="copy-color-change">
+          <div class="copy-color-title">
+            <h2>Copy Color</h2>
+            <p id="copy-btn">Copy to clipboard</p>
+          </div>
+
+          <div class="copy-mode-select">
+            <div><p>Select Copy Mode</p></div>
+            <hr />
+            <div>
+              <input
+                type="radio"
+                name="color_mode"
+                id="copy-select-hex"
+                value="hex"
+                checked
+              />
+              <label for="copy-select-hex" name="hex">Hex</label>
+              &nbsp;&nbsp;
+              <input
+                type="radio"
+                name="color_mode"
+                id="copy-select-rgb"
+                value="rgb"
+              />
+              <label for="copy-select-rgb">RGB</label>
+            </div>
+          </div>
+
+          <div class="color-code">
+            <div class="hex">
+              <label for="">Hex</label>
+              <div class="hex_code">
+                <input id="hex-color-code" type="text" value="FF9203" />
+                <div>#</div>
+              </div>
+            </div>
+            <div class="rgb">
+              <label for="">RGB</label>
+              <input
+                id="rgb-color-code"
+                disabled
+                type="text"
+                value="rgb(255,146,3)"
+              />
+            </div>
+          </div>
+
+          <div class="adjust-rgb-color">
+            <h2>Adjust RGB Colors</h2>
+            <div class="rgb-range">
+              <div class="red">
+                <div>
+                  <p>Red</p>
+                  <p id="red-range-value">255</p>
+                </div>
+                <input
+                  type="range"
+                  name="rgb-range"
+                  min="0"
+                  max="255"
+                  value="255"
+                  id="red-rgb-range"
+                />
+              </div>
+              <hr />
+              <div class="green">
+                <div>
+                  <p>Green</p>
+                  <p id="green-range-value">146</p>
+                </div>
+                <input
+                  type="range"
+                  name="rgb-range"
+                  min="0"
+                  max="255"
+                  value="146"
+                  id="green-rgb-range"
+                />
+              </div>
+              <hr />
+              <div class="blue">
+                <div>
+                  <p>Blue</p>
+                  <p id="blue-range-value">3</p>
+                </div>
+                <input
+                  type="range"
+                  name="rgb-range"
+                  min="0"
+                  max="255"
+                  value="3"
+                  id="blue-rgb-range"
+                />
+              </div>
+            </div>
+          </div>
+          <p class="random_color random_click">Random Color</p>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

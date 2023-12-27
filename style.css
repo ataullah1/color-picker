@@ -1,0 +1,190 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+h2 {
+  font-size: 20px;
+}
+body {
+  background-color: rgb(199, 208, 197);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.main-box {
+  width: 500px;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+}
+.display-color .display-color-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.808);
+  padding-bottom: 10px;
+}
+
+.display-color-text p,
+.random_color {
+  color: tomato;
+  cursor: pointer;
+  padding: 5px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  user-select: none;
+  width: 140px;
+  text-align: center;
+}
+.random_color:active,
+.display-color-text p:active {
+  color: rgb(0, 75, 50);
+  font-weight: bold;
+}
+
+.display-color .color {
+  height: 100px;
+  width: 100%;
+  margin: 10px 0 15px 0;
+  background-color: #ff9203;
+}
+.copy-color-change .copy-color-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.808);
+  user-select: none;
+}
+
+.copy-color-change .copy-color-title p {
+  color: tomato;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.copy-color-title p:active {
+  color: rgb(0, 75, 50);
+}
+
+.copy-mode-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px;
+  user-select: none;
+}
+
+.copy-mode-select hr {
+  width: 170px;
+  height: 1px;
+  border: none;
+  background-color: rgba(199, 199, 199, 0.808);
+}
+
+.copy-mode-select div p {
+  font-size: 17px;
+}
+.color-code {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.color-code div {
+  width: 48%;
+}
+.color-code div label {
+  display: block;
+  font-weight: bold;
+  user-select: none;
+}
+.color-code div input {
+  width: 100%;
+  display: block;
+  padding: 4px 15px;
+  border: 1px solid tomato;
+}
+
+.color-code div .hex_code input {
+  padding-left: 35px;
+}
+.color-code div .hex_code {
+  width: 100%;
+  position: relative;
+}
+.color-code div .hex_code div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(255, 146, 3);
+  width: 30px;
+  padding: 2px 0;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.adjust-rgb-color {
+  padding: 35px 0;
+}
+
+.adjust-rgb-color h2 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.808);
+}
+.adjust-rgb-color .rgb-range {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.adjust-rgb-color .rgb-range div {
+  width: 33%;
+  padding: 0 5px;
+}
+.adjust-rgb-color .rgb-range div input {
+  width: 100%;
+  cursor: pointer;
+}
+.adjust-rgb-color .rgb-range div div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.random_color {
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+}
+
+#hex-color-code {
+  text-transform: uppercase;
+}
+
+@media (max-width: 490px) {
+  h2 {
+    font-size: 18px;
+  }
+  .copy-color-change .copy-color-title p {
+    font-size: 14px;
+  }
+  .copy-mode-select hr {
+    width: 80px;
+  }
+}
+@media (max-width: 390px) {
+  .copy-mode-select hr {
+    width: 0;
+  }
+}
